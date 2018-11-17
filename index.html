@@ -1,65 +1,210 @@
 <!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-
-<html class="no-js" lang="">
-
-
-<head>
-<meta charset="utf-8">
-<meta name="description" content="">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Harsh Patel</title>
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/jquery.fancybox.css">
-<link rel="stylesheet" href="css/main.css">
-<link rel="stylesheet" href="css/responsive.css">
-<link rel="stylesheet" href="css/animate.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-</head>
-
-<body>
-
-<section class="banner" role="banner">
-  <header id="header"> 
-  </header>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <title>Hello, world!</title>
+  </head>
   
-  <!-- banner text -->
-  <div class="container">
-    <div class="col-md-10 col-md-offset-1">
-      <div class="banner-text text-center">
-      	<img class="img-thumbnail" src="dp5.jpg" width="300" height="300" style="margin-top: -200px;border-radius: 50%">
-        <p style="font-family: raleway; font-size: 50px; font-weight: bold">Hey, I’m Harsh Patel</p>
-        <p style="font-family: raleway; font-size: 30px; font-weight: bold;margin-top: -30px;">Computer Programmer</p>
-        <p style="margin-top: -10px; font-family: raleway; font-size: 20px; font-weight: bold"> Contact Me : 9978779967<br>harshgp44@gmail.com</p>
-      </div>
-    </div>
-  </div>
-</section>
 
-<footer class="section footer">
-      <div class="col-md-12">
-        <p>
-        <ul class="footer-share">
-          <li><a href="https://facebook.com/harshpatel7797"><i class="fa fa-facebook"></i></a></li>
-          <li><a href="https://www.github.com/harshpatel44"><i class="fa fa-github"></i></a></li>
-          
-        </ul>
-        </p>
-        <p>
-          Made with <i class="fa fa-heart pulse"></i> by  Harsh Patel</p>
-      </div>
-    </div>
-  </div>
-</footer>
-<!-- footer --> 
+  <style type="text/css">
+	body{
+		background: linear-gradient(to left,#c5c1c0 67%,#141414 10%);
+		
+		
+	}
 
-<!-- JS FILES --> 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
-<script src="js/bootstrap.min.js"></script> 
-<script src="js/jquery.fancybox.pack.js"></script> 
-<script src="js/jquery.waypoints.min.js"></script> 
-<script src="js/retina.min.js"></script> 
-<script src="js/modernizr.js"></script> 
-<script src="js/main.js"></script>
-</body>
+	@font-face {
+    font-family: digital;
+    src: url(GOTHIC.ttf);
+}
+
+	
+
+
+	
+	#profile{
+		margin-left:50px;
+		margin-top: 125px;
+		margin-right: 20px;
+		background-color: #c5c1c0;
+		color: black;
+		
+		font-family: digital;
+		color: #25252e;
+		border: solid black 0.1px;
+		border-radius: 1%;
+		position: fixed;
+		
+		
+		
+		}
+
+	#works{
+		border-left: solid #984b43 0px;
+		margin-left: 100px;
+	}
+
+	#photo{
+		margin-top: 10px;
+		margin-left: 40px;
+		height: 200px;
+		width: 200px;
+		border-radius: 50%;
+		
+		
+	}
+	#intro{
+		margin-top: 65px;
+		margin-left: 50px;
+
+		color: #141414;
+
+		font-family: digital;
+		font-size: 18px;
+
+	}
+
+	#icons{
+		margin-bottom: 40px;
+		margin-left: 80px;
+	}
+	#name{
+		margin-left: 35px;
+	}
+	#am{
+		margin-left: 230px;
+		
+	}	
+	#ma{
+		margin-left: 230px;
+		
+	}
+
+	#t1,#t2,#t3,#t4,#t5,#t6,#t7,#t8,#t9,#t10,#t11,#t12,#t13,#t14{
+		transition: 0.1s;
+	}
+
+	#t1:hover,#t2:hover,#t3:hover,#t4:hover,#t5:hover,#t6:hover,#t7:hover,#t8:hover,#t9:hover,#t10:hover,#t11:hover,#t12:hover,#t13:hover,#t14:hover{
+		background-color: #6a6665;
+		color:#c5c1c0;	}
+
+	#gh,#gm,#li{
+		transition: 0.5s;
+		
+
+	}
+
+	
+	#gh:hover, #gm:hover, #li:hover{
+		
+		transform: rotate(360deg);
+	}
+
+	
+		
+	
+</style>
+
+
+  <body>
+    
+
+  	<div id="maindiv">
+	    <div class= "row">
+	    
+<!-- Left side -->
+	    	<div  class="col-md-3 col-xs-12">
+	    		<div id="profile" class="col-md-3 col-xs-10">
+		    		<img id="photo" src="fp14.jpg" ><br><br>
+		    		<h1 id="name">Hi I'm Harsh</h1><br>
+		    		<div id="icons">
+			    		<a href="https://www.github.com/Harshpatel44" style="text-decoration: none; color:inherit;" target="_blank">
+			    			<i id="gh" class="fab fa-github fa-2x"></i>
+			    		</a>&nbsp;
+			    		<a href="mailto:harshgp44@gmail.com" style="text-decoration: none; color:inherit;">
+			    			<i id="gm" class="fas fa-envelope  fa-2x"></i>
+			    		</a>&nbsp;
+			    		<a href="https://www.linkedin.com/in/harsh-patel-5b265314b/" style="text-decoration: none; color:inherit;" target="_blank">
+			    			<i id="li" class="fab fa-linkedin fa-2x"></i>
+			    		</a>
+			    	</div>
+			    </div>
+	    	</div>
+<!-- Right side About Me -->
+	    	<div id ="works" class="col-md-7 col-xs-10">
+	    		<div id="intro"class="row" >
+	    			<h2 id="am">About Me<br><br></h1>
+					<p id="t1"> I am a Computer Science engineer and a Programmer; Confident about myself and passionate about coding. I have been involved in this field for more than 5 years and has gathered much experience from it. I like to stay involved in projects. I mainly focus on solving real life problems with ease & innovation using my domain.</p>
+
+					<p id="t2">I Like Music and sports too. I play Tabla( Indian Purcussion instrument) and football.</p> 
+					<p id="t3">I am penitent about reading and writing quotes. I maintain Instagram page named as "Rustic Quotes". You can check it out <a  href="https://www.instagram.com/rustic_thoughts/" target="_blank">here</a>.</p>
+					<p id="t4"> I am member of <a href="https://codingprivacy.github.io/" target="_blank">Coding Privacy</a> Organisation, which is about sharing knowledge and innovative codes. We also maintain a youtube channel. 
+					Here is the <a href="https://www.youtube.com/channel/UChav2OCtkA8tAVY3D7OJlcA">link</a>.</p>
+
+
+
+<!-- Right side My Works -->
+					<h2 id="ma"><br><br>My Works<br><br></h2>
+					<p id="t5"># Currently Along with my Team mates , I am working on our final year project which is <u>"Artificial Intelligence based feedback portal system"</u>. A system which interacts in a human friendly manner and takes feedbacks from an institution. This project incorporates Data Analytics , Data visualisation and NLTK.</p> <br><br>
+					<p id="t6"># Along with project mate , I have been working on making a Python GUI IDE for about a year.</p>
+					<br><br>
+					<p id="t7"># <a href="https://github.com/codingprivacy/color_detect-using-ML" target="_blank">color_detect_using_ML</a> This Repository is based on Machine learning which detects the color of a sample photo element. Initially this detects whether the given Photo Element is Red or not. This is based on Logistic Regression Algorithm. The Final Idea is to detect every color of the given photo element.</p><br><br>
+
+					<p id="t8"># <a href="https://github.com/Harshpatel44/RemindMe" target="_blank">RemindMe</a> This Application is made to strenghthen our Vocabulary. It pop ups the window having word and its meaning in each intervals. It also has a feature of Multiple Choice Questions to test your knowledge.</p><br><br>
+
+					<p id="t9">#  <a href="https://github.com/Harshpatel44/website-rank-finder" target="_blank">Website-rank-finder</a> This program finds the rank of the Website provided. It finds the rank in Google Search Engine.</p>
+					<br><br>
+
+					<p id="t10"># <a href="https://github.com/Harshpatel44/opengl_tutorials" target="_blank">opengl_tutorials</a>This Repository Contains Guided Tutorials for Open Graphics Library i.e. OpenGL.</p><br><br>
+
+					<p id="t11"># I have been part of a seminar (as a <u>Speaker</u>) on Introduction to Github and Its hands on session.</p><br><br>
+
+					<p id="t12"># <a href="https://github.com/Harshpatel44/Linux-Panel-Design" target="_blank">Linux-panel-design</a>
+					This repository contains modified panel designs for Linux Operating System.</p><br><br>
+
+					<p id="t13"># <a href="https://github.com/Harshpatel44/IAmHelper" target="_blank">IAmHelper</a>An Application that helps you to search the meaning of any word or sentence or can search it instantly on internet.</p><br><br>
+
+					<p id="t14"> Apart from these, I have worked on <u>Machine Learning</u>, <u>Socket programming</u> , <u>Web Scraping and Automation</u>. I have spent much time on GUI library (<u>Tkinter</u>) in Python.</p>
+	    		</div>
+
+<!-- Right side Footer -->
+	    		<div id="footer">
+	    			<br><br>
+	    			<p style="text-align: center; font-size:12px;"><i class="far fa-copyright"></i> Copyrights Reserved.</p>
+	    		</div>	
+	    	</div>
+
+	    
+	    
+
+
+
+
+
+
+
+
+	    </div>
+    <div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    
+
+
+
+
+  </body>
 </html>
+
+
